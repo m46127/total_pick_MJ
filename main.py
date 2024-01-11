@@ -13,7 +13,7 @@ if selected_option == "トップページ":
     st.title("トップページ")
     st.write("ようこそ！")
 
-elif selected_option == "pick":
+elif selected_option == "csv_pick":
     # pick.py の内容をインポートして実行
     from pick import pick_page
     pick_page()
