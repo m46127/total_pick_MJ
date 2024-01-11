@@ -3,7 +3,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 # メニューの選択肢を定義
-menu_options = ["トップページ", "pick", "pdf_pick"]
+menu_options = ["トップページ", "csv_pick", "pdf_pick"]
 
 # サイドバーでオプションメニューを表示
 selected_option = option_menu("メインメニュー", menu_options, icons=['house', 'upload', 'file-pdf'], menu_icon="cast", default_index=0)
