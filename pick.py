@@ -21,7 +21,7 @@ def pick_page():
         df['Quantity'] = df['Quantity'].astype(int)
         df = df.groupby('Product Code').sum().reset_index()
 
-        inventory_df = pd.read_excel(uploaded_file_excel, usecols='D')
+        inventory_df = pd.read_excel(uploaded_file_excel, usecols='E')
         inventory_df.columns = ['LOTNo.']
         inventory_df['LOTNo.'] = inventory_df['LOTNo.'].astype(str)
 
